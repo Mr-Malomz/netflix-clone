@@ -170,7 +170,9 @@ const TopLayer = () => {
             <HeaderContent>
                 <h1>See whats next</h1>
                 <p className="main">Watch anywhere. Cancel Anytime</p>
-                <ButtonMain href="/signup">try 30 days free <i className="fas fa-chevron-right"></i></ButtonMain>
+                <Link to="/signup">
+                    <ButtonMain href="/signup">try 30 days free <i className="fas fa-chevron-right"></i></ButtonMain>
+                </Link>
                 <p className="ref">Have an account? <Link to="/signin">Sign In</Link></p>
             </HeaderContent>
         </Header>
