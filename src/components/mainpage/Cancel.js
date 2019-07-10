@@ -2,6 +2,7 @@ import React from 'react';
 import combine from '../../img/combine.png';
 import Button from '../Button';
 import styled from 'styled-components';
+import { Link } from "react-router-dom";
 
 const TabContent = styled.div`
     .container-cancel {
@@ -43,7 +44,9 @@ const Cancel = () => {
             <div className="container-cancel">
                 <div className="container-text">
                     <p>If you decide Netflix isn't for you - no problem. No commitment. Cancel online anytime.</p>
-                    <ButtonMedium href="/signup"> try 30 days free</ButtonMedium>
+                    <Link to="/signup">
+                        <ButtonMedium> try 30 days free</ButtonMedium>
+                    </Link>
                 </div>
                 <img src={combine} alt="screens"/>
             </div>
