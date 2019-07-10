@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from '../Button';
-import { Link } from 'react-router-dom'
 import { headers, rows_check1, rows_check2, rows_details, rows_price } from '../../data';
 
 const PickContent = styled.div`
@@ -85,9 +84,7 @@ const Pick = () => {
         <PickContent>
             <div className="pick-top">
                 <p>Choose one plan and watch everything on Netflix.</p>
-                <Link to="/signup">
-                    <ButtonMedium>try 30 days free</ButtonMedium>
-                </Link>
+                <ButtonMedium href="/signup">try 30 days free</ButtonMedium>
             </div>
             <table>
                 <thead>

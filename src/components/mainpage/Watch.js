@@ -4,7 +4,6 @@ import Button from '../Button';
 import TV from '../../img/TV.png';
 import tablet from '../../img/tablet.png';
 import computer from '../../img/computer.png';
-import { Link } from 'react-router-dom'
 
 
 const WatchContent = styled.div`
@@ -61,9 +60,7 @@ const Watch = () => {
         <WatchContent>
             <div className="watch-top">
                 <p>Watch TV shows and movies anytime, anywhere — personalized for you.</p>
-                <Link to="/signup">
-                    <ButtonMedium>try 30days free</ButtonMedium>
-                </Link>
+                <ButtonMedium href="/signup">try 30days free</ButtonMedium>
             </div>
             <div className="watch-bottom">
                 <div>

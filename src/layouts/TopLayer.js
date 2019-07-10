@@ -164,19 +164,13 @@ const TopLayer = () => {
     return (
         <Header>
             <HeaderTop>
-                <Link><img src={logo} alt="Netflix-Logo"/></Link>
-                <Link to="/signin">
-                    <ButtonSignUp>Sign In</ButtonSignUp>
-                </Link>
+                <Link to="/"><img src={logo} alt="Netflix-Logo"/></Link>
+                <ButtonSignUp href="/signin">Sign In</ButtonSignUp>
             </HeaderTop>
             <HeaderContent>
                 <h1>See whats next</h1>
                 <p className="main">Watch anywhere. Cancel Anytime</p>
-                <Link to="/signup">
-                    <ButtonMain>
-                        try 30 days free <i className="fas fa-chevron-right"></i>
-                    </ButtonMain>
-                </Link>
+                <ButtonMain href="/signup">try 30 days free <i className="fas fa-chevron-right"></i></ButtonMain>
                 <p className="ref">Have an account? <Link to="/signin">Sign In</Link></p>
             </HeaderContent>
         </Header>
