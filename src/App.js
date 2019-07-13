@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { Switch, Route } from "react-router-dom";
 import MainPage from './layouts/MainPage';
-// import SignIn from './layouts/SignIn';
-// import SignUp from './layouts/SignUp';
 import Loader from './components/Loader';
 import Loadable from 'react-loadable';
 
